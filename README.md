@@ -6,8 +6,8 @@ See the [initial scope](docs/TODO.md) for the proposed behavior and acceptance c
 
 ## Contributing
 
-- [Report a bug](https://github.com/bonelifer/restorejumpbox/issues).
-- [Ask a question or propose a feature](https://github.com/bonelifer/restorejumpbox/discussions).
+- [Report a bug](https://github.com/phpbbmodders/restorejumpbox/issues).
+- [Ask a question or propose a feature](https://github.com/phpbbmodders/restorejumpbox/discussions).
 
 ## Acknowledgments
 
