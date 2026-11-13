@@ -17,7 +17,7 @@ phpBB 4.0 removes the "Jump to" forum selector, as proposed in [phpBB PR #6927](
 
 [<img src="docs/images/screenshots/forum.png" alt="Forum page" width="440" height="309">](docs/images/screenshots/forum.png)
 [<img src="docs/images/screenshots/topic.png" alt="Topic page" width="440" height="309">](docs/images/screenshots/topic.png)
-[<img src="docs/images/screenshots/acp-load-settings.png" alt="ACP Load settings" width="440" height="309">](docs/images/screenshots/acp-load-settings.png)
+[<img src="docs/images/screenshots/acp-load-settings.png" alt="ACP Load settings" width="440" height="39">](docs/images/screenshots/acp-load-settings.png)
 
 [Full screenshot gallery](docs/images/screenshots/README.md)
 
