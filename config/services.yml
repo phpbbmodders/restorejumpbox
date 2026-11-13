@@ -1,0 +1,12 @@
+services:
+    phpbbmodders.restorejumpbox.listener:
+        class: phpbbmodders\restorejumpbox\event\listener
+        arguments:
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+        tags:
+            - { name: event.listener }
