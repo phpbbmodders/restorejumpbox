@@ -10,7 +10,7 @@ In **ACP → General → Load settings**, set **Show the public jumpbox** to **N
 
 [<img src="docs/images/screenshots/forum.png" alt="Forum page" width="440" height="309">](docs/images/screenshots/forum.png)
 [<img src="docs/images/screenshots/topic.png" alt="Topic page" width="440" height="309">](docs/images/screenshots/topic.png)
-[<img src="docs/images/screenshots/mobile.png" alt="Mobile forum page" width="390" height="844">](docs/images/screenshots/mobile.png)
+[<img src="docs/images/screenshots/acp-load-settings.png" alt="ACP Load settings" width="440" height="309">](docs/images/screenshots/acp-load-settings.png)
 
 [Full screenshot gallery](docs/images/screenshots/README.md)
 

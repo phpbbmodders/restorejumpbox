@@ -11,3 +11,7 @@
 ## Mobile forum page
 
 [<img src="mobile.png" alt="Mobile forum page" width="390" height="844">](mobile.png)
+
+## ACP Load settings
+
+[<img src="acp-load-settings.png" alt="Restore Jumpbox settings in the ACP" width="440" height="309">](acp-load-settings.png)
