@@ -1,6 +1,8 @@
+{% if not S_RESTOREJUMPBOX_HIDDEN %}
 {% INCLUDEJS "@phpbbmodders_restorejumpbox/jumpbox.js" %}
+{% endif %}
 
-<div class="action-bar actions-jump">
+<div class="action-bar actions-jump"{% if S_RESTOREJUMPBOX_HIDDEN %} hidden{% endif %}>
 	<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-{{ S_CONTENT_FLOW_BEGIN }} dropdown-button-control" id="jumpbox">
 		<button type="button" aria-expanded="false" aria-controls="restorejumpbox-links" class="button button-secondary dropdown-trigger dropdown-select">
 			<span>{{ lang('JUMP_TO') }}</span>

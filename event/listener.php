@@ -29,7 +29,28 @@ class listener implements EventSubscriberInterface
 
 	public static function getSubscribedEvents(): array
 	{
-		return ['core.page_footer' => 'populate_jumpbox'];
+		return [
+			'core.acp_board_config_edit_add' => 'add_visibility_setting',
+			'core.page_footer' => 'populate_jumpbox',
+		];
+	}
+
+	public function add_visibility_setting(\phpbb\event\data $event): void
+	{
+		if ($event['mode'] !== 'load' || isset($this->config['load_jumpbox']))
+		{
+			return;
+		}
+
+		$this->user->add_lang_ext('phpbbmodders/restorejumpbox', 'acp');
+		$display_vars = $event['display_vars'];
+		$display_vars['vars']['restorejumpbox_visible'] = [
+			'lang' => 'RESTOREJUMPBOX_VISIBLE',
+			'validate' => 'bool',
+			'type' => 'radio:yes_no',
+			'explain' => true,
+		];
+		$event['display_vars'] = $display_vars;
 	}
 
 	/**
@@ -61,6 +82,9 @@ class listener implements EventSubscriberInterface
 			false,
 			true,
 		);
-		$this->template->assign_var('S_RESTOREJUMPBOX', true);
+		$this->template->assign_vars([
+			'S_RESTOREJUMPBOX' => true,
+			'S_RESTOREJUMPBOX_HIDDEN' => !(bool) ($this->config['restorejumpbox_visible'] ?? true),
+		]);
 	}
 }
