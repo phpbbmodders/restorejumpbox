@@ -1,0 +1,30 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  extension-tests:
+    uses: phpbb-extensions/test-framework/.github/workflows/tests.yml@master
+    with:
+      EXTNAME: phpbbmodders/restorejumpbox
+      PHPBB_BRANCH: master
+      EPV: 0
+      RUN_MYSQL_JOBS: 0
+      RUN_PGSQL_JOBS: 0
+      RUN_MSSQL_JOBS: 0
+      RUN_WINDOWS_JOBS: 0
+      PRIMARY_PHP_VERSION: '8.3'
+      PHP_VERSION_MATRIX: '["8.2", "8.5"]'
+
+  epv:
+    uses: phpbbmodders/.github/.github/workflows/epv.yml@v1
+    with:
+      EXTNAME: phpbbmodders/restorejumpbox
+      PHPBB_BRANCHES: '["3.3.x", "master"]'
