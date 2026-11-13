@@ -1,3 +1,3 @@
 # Reporting a vulnerability
 
-Email bonelifer@gmail.com and include the repository name, `restorejumpbox`, in the report.
+Email security@williamjacoby.cc and include the organization, `phpbbmodders`, and repository, `restorejumpbox`, in the report.
