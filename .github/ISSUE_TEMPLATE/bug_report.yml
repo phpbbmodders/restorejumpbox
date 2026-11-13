@@ -1,0 +1,14 @@
+name: Bug report
+description: Report a problem with Restore Jumpbox.
+labels: ["bug"]
+body:
+  - type: input
+    attributes:
+      label: phpBB and extension versions
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce, expected behavior, and actual behavior
+    validations:
+      required: true
