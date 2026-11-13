@@ -9,6 +9,7 @@
 namespace phpbbmodders\restorejumpbox\event;
 
 use phpbb\config\config;
+use phpbb\language\language;
 use phpbb\request\request_interface;
 use phpbb\template\template;
 use phpbb\user;
@@ -18,6 +19,7 @@ class listener implements EventSubscriberInterface
 {
 	public function __construct(
 		private config $config,
+		private language $language,
 		private request_interface $request,
 		private template $template,
 		private user $user,
@@ -42,7 +44,7 @@ class listener implements EventSubscriberInterface
 			return;
 		}
 
-		$this->user->add_lang_ext('phpbbmodders/restorejumpbox', 'acp');
+		$this->language->add_lang('acp', 'phpbbmodders/restorejumpbox');
 		$display_vars = $event['display_vars'];
 		$visibility_setting = [
 			'lang' => 'RESTOREJUMPBOX_VISIBLE',
