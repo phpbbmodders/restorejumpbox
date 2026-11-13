@@ -10,6 +10,11 @@ namespace phpbbmodders\restorejumpbox\migrations;
 
 class add_visibility_setting extends \phpbb\db\migration\migration
 {
+	public static function depends_on(): array
+	{
+		return ['\phpbb\db\migration\data\v400\v400a1'];
+	}
+
 	public function update_data(): array
 	{
 		return [
