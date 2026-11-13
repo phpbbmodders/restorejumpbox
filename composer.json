@@ -4,7 +4,14 @@
 	"description": "Restores the public forum jumpbox on phpBB 4.0.",
 	"version": "0.1.0-dev",
 	"license": "GPL-2.0-only",
-	"authors": [{"name": "phpBB Modders"}],
+	"authors": [
+		{
+			"name": "phpBB Modders",
+			"email": "board@phpbbmodders.com",
+			"homepage": "https://www.phpbbmodders.com/",
+			"role": "Extension Developer"
+		}
+	],
 	"require": {
 		"php": "^8.2",
 		"composer/installers": "^2.0"
@@ -14,5 +21,6 @@
 		"soft-require": {
 			"phpbb/phpbb": ">=4.0.0-a2-dev,<4.1.0-dev"
 		}
-	}
+	},
+	"homepage": "https://www.phpbbmodders.com/"
 }

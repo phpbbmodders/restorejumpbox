@@ -2,7 +2,19 @@
 
 A development extension that restores the public forum jumpbox on prosilver forum and topic pages after the removal proposed in [phpBB PR #6927](https://github.com/phpbb/phpbb/pull/6927).
 
-For testing on phpBB 4.0 with the removal applied, place the extension in `ext/phpbbmodders/restorejumpbox` and enable **Restore Jumpbox** in the ACP. See the [scope and acceptance checks](docs/TODO.md).
+For testing on phpBB 4.0 with the removal applied, place the extension in `ext/phpbbmodders/restorejumpbox` and enable **Restore Jumpbox** in the ACP.
+
+## Screenshots
+
+[<img src="docs/images/screenshots/forum.png" alt="Forum page" width="440" height="309">](docs/images/screenshots/forum.png)
+[<img src="docs/images/screenshots/topic.png" alt="Topic page" width="440" height="309">](docs/images/screenshots/topic.png)
+[<img src="docs/images/screenshots/mobile.png" alt="Mobile forum page" width="390" height="844">](docs/images/screenshots/mobile.png)
+
+[Full screenshot gallery](docs/images/screenshots/README.md)
+
+## TODO
+
+See the [scope and acceptance checks](docs/TODO.md).
 
 ## Contributing
 
