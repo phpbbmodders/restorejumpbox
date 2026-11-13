@@ -12,6 +12,7 @@ if (!defined('IN_PHPBB'))
 }
 
 $lang = array_merge($lang ?? [], [
+	'RESTOREJUMPBOX_SETTINGS' => 'Restore Jumpbox',
 	'RESTOREJUMPBOX_VISIBLE' => 'Show the public jumpbox',
 	'RESTOREJUMPBOX_VISIBLE_EXPLAIN' => 'Hide the jumpbox from visitors while keeping permission-filtered forum links available to clients such as phpbb-tui.',
 ]);

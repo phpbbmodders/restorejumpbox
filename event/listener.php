@@ -44,12 +44,23 @@ class listener implements EventSubscriberInterface
 
 		$this->user->add_lang_ext('phpbbmodders/restorejumpbox', 'acp');
 		$display_vars = $event['display_vars'];
-		$display_vars['vars']['restorejumpbox_visible'] = [
+		$visibility_setting = [
 			'lang' => 'RESTOREJUMPBOX_VISIBLE',
 			'validate' => 'bool',
 			'type' => 'radio:yes_no',
 			'explain' => true,
 		];
+		$settings = [];
+		foreach ($display_vars['vars'] as $key => $value)
+		{
+			if ($value === 'ACP_SUBMIT_CHANGES')
+			{
+				$settings['legend_restorejumpbox'] = 'RESTOREJUMPBOX_SETTINGS';
+				$settings['restorejumpbox_visible'] = $visibility_setting;
+			}
+			$settings[$key] = $value;
+		}
+		$display_vars['vars'] = $settings;
 		$event['display_vars'] = $display_vars;
 	}
 

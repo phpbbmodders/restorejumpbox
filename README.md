@@ -29,4 +29,4 @@ See the [scope and acceptance checks](docs/TODO.md).
 
 ## License
 
-Licensed under the [GNU General Public License v2.0](LICENSE).
+Licensed under the [GNU General Public License v2.0](license.txt).
